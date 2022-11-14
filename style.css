@@ -14,34 +14,41 @@ p {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-p.start-button {     
+.start-button {     
     width: 400px;
     height: 150px;
     border: 0;
     text-decoration: none;
-    border-radius: 5%;
+    border-radius: 25px;
     font-size: 44px;
     color:#402F30;
     background-color: #F99F63;
 }
-p.start-button:hover, a.start-button:hover{     
+.start-button:hover, a.start-button:hover {
     width: 400px;
     height: 150px;
     border: 0;
-    border-radius: 5%;
+    border-radius: 25px;
     border-color: #F99F63;
     font-size: 44px;
     color: #F99F63;
     background-color: white;
 }
-p.start-button:active, a.start-button.active{     
+.start-button:active, a.start-button.active {
     width: 400px;
     height: 150px;
     border: 0;
-    border-radius: 5%;
+    border-radius: 25px;
     font-size: 44px;
-    color:#402F30;
+    color: #402F30;
     background-color: #F99F63;
+}
+.gif1 {
+    position: absolute;
+    width: 650px;
+    height: auto;
+    bottom: 5px;
+    right: 5px;
 }
 .color-white{
     color: white;
