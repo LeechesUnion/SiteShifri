@@ -1,4 +1,7 @@
-body {
+
+/*START*/
+
+.start-body {
     background-color: #402F30;
 }
 p {
@@ -42,25 +45,7 @@ p {
     font-size: 44px;
     color: #402F30;
     background-color: #F99F63;
-}/*
-.start-button a {
-    width: 400px;
-    height: 150px;
-    text-decoration: none;
-        color:#402F30;
 }
-.start-button a:hover, a.hover {
-    width: 400px;
-    height: 150px;
-    text-decoration: none;
-    color: #F99F63;
-}
-.start-button a:active, a.active {
-    width: 400px;
-    height: 150px;
-    text-decoration: none;
-    color: #402F30;
-}*/
 .gif1 {
     position: absolute;
     width: 650px;
@@ -73,4 +58,41 @@ p {
 }
 .color-black{
     color:black;
+}
+
+/*THEORY*/
+
+.theory-body {
+    background-color: #EEEDEB;
+}
+
+/*THEORY 1*/
+
+.bottom-stroke {
+    position: absolute;
+    width: auto;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #402F30;
+}
+.bottom-stroke p {
+    color: #402F30;
+    text-align: right;
+    margin-right: 10px;
+}
+.top-stroke {
+    position: absolute;
+    width: auto;
+    height: 40px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: #402F30;
+}
+.top-stroke p {
+    color: #402F30;
+    text-align: right;
+    margin-right: 10px;
 }
