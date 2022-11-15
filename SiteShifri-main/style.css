@@ -1,0 +1,76 @@
+body {
+    background-color: #402F30;
+}
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+.start{
+    position: relative
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.start-button {     
+    width: 400px;
+    height: 150px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 44px;
+    color:#402F30;
+    background-color: #F99F63;
+}
+.start-button:hover, a.start-button:hover {
+    width: 400px;
+    height: 150px;
+    border: 0;
+    border-radius: 25px;
+    border-color: #F99F63;
+    font-size: 44px;
+    color: #F99F63;
+    background-color: white;
+}
+.start-button:active, a.start-button.active {
+    width: 400px;
+    height: 150px;
+    border: 0;
+    border-radius: 25px;
+    font-size: 44px;
+    color: #402F30;
+    background-color: #F99F63;
+}/*
+.start-button a {
+    width: 400px;
+    height: 150px;
+    text-decoration: none;
+        color:#402F30;
+}
+.start-button a:hover, a.hover {
+    width: 400px;
+    height: 150px;
+    text-decoration: none;
+    color: #F99F63;
+}
+.start-button a:active, a.active {
+    width: 400px;
+    height: 150px;
+    text-decoration: none;
+    color: #402F30;
+}*/
+.gif1 {
+    position: absolute;
+    width: 650px;
+    height: auto;
+    bottom: 5px;
+    right: 5px;
+}
+.color-white{
+    color: white;
+}
+.color-black{
+    color:black;
+}
