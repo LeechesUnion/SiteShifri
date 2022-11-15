@@ -42,7 +42,25 @@ p {
     font-size: 44px;
     color: #402F30;
     background-color: #F99F63;
+}/*
+.start-button a {
+    width: 400px;
+    height: 150px;
+    text-decoration: none;
+        color:#402F30;
 }
+.start-button a:hover, a.hover {
+    width: 400px;
+    height: 150px;
+    text-decoration: none;
+    color: #F99F63;
+}
+.start-button a:active, a.active {
+    width: 400px;
+    height: 150px;
+    text-decoration: none;
+    color: #402F30;
+}*/
 .gif1 {
     position: absolute;
     width: 650px;
