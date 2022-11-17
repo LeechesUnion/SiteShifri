@@ -25,6 +25,12 @@ button {
 .dark-brown {
     color: #402F30;
 }
+html {
+    cursor: url("images/paw.png"), url("images/paw.cur"), default;
+}
+button {
+    cursor: url("images/finger.png"), url("images/finger.cur"), pointer;
+}
 
 /*START*/
 
