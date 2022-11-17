@@ -10,6 +10,9 @@ h1 {
     font-family: 'Comic Sans MS';
     font-size: 46px;
 }
+.dark-body {
+    background: #402F30;
+}
 button {
     font-family: 'Comic Sans MS';
 }
@@ -26,17 +29,13 @@ button {
     color: #402F30;
 }
 html {
-    cursor: url("images/paw.png"), url("images/paw.cur"), default;
+    cursor: url("images/paw.png"), url("images/paw.cur") 0 0, default;
 }
-button {
-    cursor: url("images/finger.png"), url("images/finger.cur"), pointer;
+button, a {
+    cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
 }
 
 /*START*/
-
-.start-body {
-    background-color: #402F30;
-}
 
 .relative{
     position: relative
@@ -85,6 +84,21 @@ button {
     right: 5px;
 }
 
+/*COMICS*/
+
+.right-strelka {
+    position: absolute;
+    left: 30px;
+}
+.left-strelka {
+    position: absolute;
+    right: 30px;
+}
+.main-comics {
+    width: 1200px;
+    height: 900px;
+
+}
 
 /*THEORY*/
 
@@ -124,9 +138,6 @@ button {
 }
 
 /*SUBTITLES*/
-.sub-body {
-    background-color: #402F30;
-}
 
 h1 {
     
