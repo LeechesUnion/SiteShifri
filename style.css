@@ -139,6 +139,12 @@ button, a {
 
 /*SUBTITLES*/
 
-h1 {
-    
+.sub-main {
+    position: absolute;
+    bottom: 178px;
+    width: 75%;
+    height: 2931px;
+    left: 100px;
+    top: 1110px;
+    background: #F99F63;
 }
