@@ -8,7 +8,36 @@ a {
 }
 h1 {
     font-family: 'Comic Sans MS';
-    font-size: 46px;
+    font-size: 94px;
+}
+h2 {
+    font-family: 'Comic Sans MS';
+    font-size: 48px;
+}
+h3 {
+    font-family: 'Comic Sans MS';
+    font-size: 40px;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.margintop75 {
+    margin-top: 75px;
+}
+.margintop35 {
+    margin-top: 35px;
+}
+.margintop10 {
+    margin-top: 10px;
+}
+.marginbtn35 {
+    margin-bottom: 35px;
 }
 .dark-body {
     background: #402F30;
@@ -34,9 +63,6 @@ html {
 button, a {
     cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
 }
-
-/*START*/
-
 .relative{
     position: relative
 }
@@ -47,6 +73,9 @@ button, a {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+
+/*START*/
+
 .start-button {     
     width: 400px;
     height: 150px;
@@ -97,7 +126,6 @@ button, a {
 .main-comics {
     width: 1200px;
     height: 900px;
-
 }
 
 /*THEORY*/
@@ -143,8 +171,43 @@ button, a {
     position: absolute;
     bottom: 178px;
     width: 75%;
-    height: 2931px;
+    height: 3061px;
     left: 100px;
     top: 1110px;
-    background: #F99F63;
+
+}
+.sub-pic1 {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: fit-content;
+    top: 10%;
+}
+.sub-pic2 {
+    position: absolute;
+    left: 0;
+    width: auto;
+    height: fit-content;
+
+}
+.sub-pic3 {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: fit-content;
+    top: 3%;
+}
+.sub-pic4 {
+    position: relative;
+    margin-left: 5.5%;
+    width: auto;
+    height: fit-content;
+    top: 30%;
+}
+.sub-tail {
+    position: absolute;
+    right: 4%;
+    width: auto;
+    height: fit-content;
+    top: 0;
 }
