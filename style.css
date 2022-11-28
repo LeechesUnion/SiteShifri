@@ -57,8 +57,13 @@ button {
 .dark-brown {
     color: #402F30;
 }
+body {
+    width: 100%;
+    min-width: 100%;
+}
 html {
     cursor: url("images/paw.png"), url("images/paw.cur") 0 0, default;
+
 }
 button, a {
     cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
@@ -72,6 +77,9 @@ button, a {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+}
+.container {
+    min-width: 3000px;
 }
 
 /*START*/
