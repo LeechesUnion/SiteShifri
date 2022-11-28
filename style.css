@@ -180,21 +180,20 @@ button, a {
     position: absolute;
     right: 0;
     width: auto;
-    height: fit-content;
-    top: 10%;
+    height: 440px;
+    top: 7%;
 }
 .sub-pic2 {
     position: absolute;
     left: 0;
     width: auto;
-    height: fit-content;
-
+    height: 600px;
 }
 .sub-pic3 {
     position: absolute;
     right: 0;
     width: auto;
-    height: fit-content;
+    height: 485px;
     top: 3%;
 }
 .sub-pic4 {
