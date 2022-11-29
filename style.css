@@ -47,6 +47,7 @@ button {
 }
 .white{
     color: white;
+
 }
 .black{
     color:black;
@@ -57,10 +58,11 @@ button {
 .dark-brown {
     color: #402F30;
 }
-body {
+/*body {
     width: 100%;
-    min-width: 100%;
-}
+    min-width: 900px;
+    max-width: 1975px;
+}*/
 html {
     cursor: url("images/paw.png"), url("images/paw.cur") 0 0, default;
 
@@ -78,9 +80,7 @@ button, a {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-.container {
-    min-width: 3000px;
-}
+
 
 /*START*/
 
@@ -136,14 +136,22 @@ button, a {
     height: 900px;
 }
 
-/*THEORY*/
+/*PRACTICE*/
 
-.theory-body {
+.pr-body {
     background-color: #EEEDEB;
 }
 
-/*THEORY 1*/
+/*PRACTICE 1*/
 
+.main-pr {
+    position: absolute;
+    width: 1211px;
+    height: 787px;
+    background: #402F30;
+    bottom: 5%;
+    right: 84px;
+}
 .bottom-stroke {
     position: absolute;
     width: auto;
