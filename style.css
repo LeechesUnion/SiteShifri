@@ -147,7 +147,7 @@ button, a {
 .main-pr {
     position: absolute;
     width: 1470px;
-    height: 770px;
+    height: 750px;
     background: #402F30;
     bottom: 9%;
     right: 3%;
@@ -184,8 +184,13 @@ button, a {
     position: absolute;
     width: 80px;
     height: auto;
-    left: 2%;
-    top: 8%;
+    left: 1.5%;
+    top: 6%;
+}
+.th1 {
+    position: absolute;
+    left: 1.5%;
+    top: 6%;
 }
 
 /*SUBTITLES*/
