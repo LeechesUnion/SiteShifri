@@ -5,7 +5,7 @@ function stop() {
 }
 function scroller() {
 
-    if (position != 3230) {
+    if (position != 3250) {
         position++;
         scroll(0, position);
         clearTimeout(timer);
