@@ -18,6 +18,10 @@ h3 {
     font-family: 'Comic Sans MS';
     font-size: 40px;
 }
+h4 {
+    font-family: 'Comic Sans MS';
+    font-size: 24px;
+}
 .text-center {
     text-align: center;
 }
@@ -58,11 +62,6 @@ button {
 .dark-brown {
     color: #402F30;
 }
-/*body {
-    width: 100%;
-    min-width: 900px;
-    max-width: 1975px;
-}*/
 html {
     cursor: url("images/paw.png"), url("images/paw.cur") 0 0, default;
 
@@ -83,7 +82,9 @@ button, a {
 
 
 /*START*/
-
+.text-demo {
+    font-size: 20px;
+}
 .start-button {     
     width: 400px;
     height: 150px;
@@ -94,25 +95,25 @@ button, a {
     color:#402F30;
     background-color: #F99F63;
 }
-.start-button:hover, a.start-button:hover {
-    width: 400px;
-    height: 150px;
-    border: 0;
-    border-radius: 25px;
-    border-color: #F99F63;
-    font-size: 44px;
-    color: #F99F63;
-    background-color: white;
-}
-.start-button:active, a.start-button.active {
-    width: 400px;
-    height: 150px;
-    border: 0;
-    border-radius: 25px;
-    font-size: 44px;
-    color: #402F30;
-    background-color: #F99F63;
-}
+    .start-button:hover, a.start-button:hover {
+        width: 400px;
+        height: 150px;
+        border: 0;
+        border-radius: 25px;
+        border-color: #F99F63;
+        font-size: 44px;
+        color: #F99F63;
+        background-color: white;
+    }
+    .start-button:active, a.start-button.active {
+        width: 400px;
+        height: 150px;
+        border: 0;
+        border-radius: 25px;
+        font-size: 44px;
+        color: #402F30;
+        background-color: #F99F63;
+    }
 .gif1 {
     position: absolute;
     width: 650px;
@@ -141,7 +142,58 @@ button, a {
 .pr-body {
     background-color: #EEEDEB;
 }
-
+.note {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    left: 1.5%;
+    top: 6%;
+}
+.level {
+    position: absolute;
+    width: auto;
+    height: 42.5px;
+    right: 3%;
+    top: 5.5%;
+}
+.button-check {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    right: 5%;
+    top: 80%;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 26px;
+    color: #402F30;
+    background-color: #F99F63;
+}
+    .button-check:hover, a.start-button:hover {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        border: 0;
+        right: 5%;
+        top: 80%;
+        border-radius: 25px;
+        border-color: #F99F63;
+        font-size: 26px;
+        color: #F99F63;
+        background-color: white;
+    }
+    .button-check:active, a.start-button.active {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        border: 0;
+        right: 5%;
+        top: 80%;
+        border-radius: 25px;
+        font-size: 26px;
+        color: #402F30;
+        background-color: #F99F63;
+    }
 /*PRACTICE 1*/
 
 .main-pr {
@@ -180,18 +232,50 @@ button, a {
     text-align: right;
     margin-right: 10px;
 }
-.note {
-    position: absolute;
-    width: 80px;
-    height: auto;
-    left: 1.5%;
-    top: 6%;
+.title-pr1 {
+    margin-left: 20px;
 }
-.th1 {
-    position: absolute;
-    left: 1.5%;
-    top: 6%;
+.text-1 {
+    margin-left: 20px;
 }
+.word-pr1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+#th1 {
+    display: none;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 120px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
+    }
+
 
 /*SUBTITLES*/
 
