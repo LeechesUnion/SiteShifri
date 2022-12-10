@@ -7,17 +7,79 @@
     <title></title>
 </head>
 <body class="pr-body">
-    <img class="note" src="images/note.png">
+    <a onclick="myClick()"><img class="note" src="images/note.png"></a>
+    <img class="level" src="images/level1.png">
     <div class="main-pr">
-        <p> pdfkgpokfdogkspokfopdsfkj</p>
+        <h4 class="title-pr1">Маршрутное шифрование</h4>
+        <p class="text-1">Расшифруйте послание зашифрованноей маршрутным шифрованием.</p>
+        <p class="word-pr1">ЖВОТЕЕОИЛСТТЮЛЕААЕМЬ</p>
+        <p class="word-pr1">Ключ: ВИРУС</p>
+        <div>
+            <table>
+                <tr>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                    <td><input type="text" id=”z_1”></td>
+                </tr>
+                <tr>
+                    <th><input type="text" id=”z_1”></th>
+                    <th><input type="text" id=”z_1”></th>
+                    <th><input type="text" id=”z_1”></th>
+                    <th><input type="text" id=”z_1”></th>
+                    <th><input type="text" id=”z_1”></th>
+                </tr>
+            </table>
+        </div>
     </div>
-    <img class="th1" src="notebook/theory1.png">
+    <div id="myModal" class="modal">
+        <span class="close white">×</span>
+        <img id="th1" class="center" src="notebook/theory1.png">
+    </div>
+    <button class="button-check" onclick="document.location='pr2.html'">Проверить</button>
     <div class="bottom-stroke">
         <p>Roman Prav</p>
     </div>
     <div class="top-stroke">
         <p>Roman Prav</p>
     </div>
+    <script>        
+        var modal = document.getElementById('myModal');
 
+        function myClick() {
+            document.getElementById("th1").style.display = "block";
+            modal.style.display = "block";
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
