@@ -10,13 +10,85 @@
     <a onclick="myClick()"><img class="note" src="images/note.png"></a>
     <img class="level" src="images/level2.png">
     <div class="main-pr">
-        <p> pdfkgpokfdogkspokfopdsfkj</p>
+        <h4 class="title-pr1">Шифрование с помощью решёток</h4>
+        <p class="text-1">Расшифруйте послание, зашифрованное способом "Шифрования с помощью решёток".</p>
+        <p class="word-pr1">ИПИВАЬОЬРСИВВМЕНОАРСАРОДГТТПТВОДНОРТ</p>
+        <p class="word-pr1">Ключ: УТЕЧКА</p>
+        <p class="text-1 red">*Значения в поле ответа записывать ЗАГЛАВНЫМИ БУКВАМИ, без пробелов!</p>
+
+        <table class="table-pr1">
+            <tr>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+            </tr>
+            <tr>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+                <td><input class="input-pr2" type="text"></td>
+            </tr>
+
+            <tr>
+                <th><input class="input-pr2" type="text" placeholder="К"></th>
+                <th><input class="input-pr2" type="text" placeholder="Л"></th>
+                <th><input class="input-pr2" type="text" placeholder="Ю"></th>
+                <th><input class="input-pr2" type="text" placeholder="Ч"></th>
+                <th><input class="input-pr2" type="text"></th>
+                <th><input class="input-pr2" type="text"></th>
+            </tr>
+        </table>
+        <img id="reshetka-big" class="reshetka-big" src="images/reshetka.png">
+        <a onclick="openReshetka()"><img class="reshetka" src="images/reshetka.png"></a>
+        <a onclick="routeRight()"><img id="route-right" class="route-right" src="images/route_right.png"></a>
+        <a onclick="routeLeft()"><img id="route-left" class="route-left" src="images/route_left.png"></a>
+        <input class="input-otvet" type="text" id="z_1" placeholder="ОТВЕТ">
+        <button id="hide-button" class="hide-button" onclick="hideReshetka()">Убрать решетку</button>
     </div>
     <div id="myModal" class="modal">
         <span class="close white">×</span>
-        <img id="th1" class="center" src="notebook/theory2.png">
+        <img id="th" class="center" src="notebook/theory2.png">
     </div>
-
+    
+    <button class="button-check" onclick='proverit()'>Проверить</button>
+    <button id="next-page" class="next-page" onclick="document.location='pr3.html'">Следующее задание</button>
     <div class="bottom-stroke">
         <p>Roman Prav</p>
     </div>
@@ -28,7 +100,7 @@
         var modal = document.getElementById('myModal');
 
         function myClick() {
-            document.getElementById("th1").style.display = "block";
+            document.getElementById("th").style.display = "block";
             modal.style.display = "block";
         }
 
@@ -39,6 +111,51 @@
         span.onclick = function () {
             modal.style.display = "none";
         }
+
+        function openReshetka() {
+            document.getElementById("reshetka-big").style.display = "inline-block";
+            document.getElementById("hide-button").style.display = "block";
+            document.getElementById("route-right").style.display = "block";
+            document.getElementById("route-left").style.display = "block";
+        }
+
+        function hideReshetka() {
+            document.getElementById("reshetka-big").style.display = "none";
+            document.getElementById("hide-button").style.display = "none";
+            document.getElementById("route-right").style.display = "none";
+            document.getElementById("route-left").style.display = "none";
+        }
+
+        var current_rotation = 0;
+
+        function routeRight() {
+
+            current_rotation += 90;
+            document.querySelector("#reshetka-big").style.transform = 'rotate(' + current_rotation + 'deg)';
+        }
+
+        function routeLeft() {
+
+            current_rotation += -90;
+            document.querySelector("#reshetka-big").style.transform = 'rotate(' + current_rotation + 'deg)';
+        }
+
+        function proverit() {
+            pr_otv_1 = 'ГОДПРОВОДИТЬИСНОВАВСТРЕТИТЬРОМАНПРАВ';
+            otv_uch_1 = document.getElementById('z_1').value;
+            ball = 0;
+            if (otv_uch_1 == pr_otv_1) {
+                ball += 1;
+            }
+            if (ball == 1) {
+                alert('Проверка прошла успешно;) Для продолжения нажмите на кнопку "Следующее задание".');
+                document.getElementById("next-page").style.display = "block";
+            }
+            else {
+                alert('Ошибка! Ответ неверный.');
+            }
+        }
+
     </script>
 </body>
 </html>
