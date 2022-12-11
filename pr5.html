@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title></title>
+</head>
+<body class="pr-body">
+    <a onclick="myClick()"><img class="note" src="images/note.png"></a>
+    <img class="level" src="images/level5.png">
+    <div class="main-pr">
+        <h4 class="title-pr1">Шифр "Виженера"</h4>
+        <p class="text-1">Расшифруйте послание, зашифрованное шифром "Виженера".</p>
+        <img id="" class="vizh" src="images/Vizhener.png">
+        <p class="word-pr1">ЮЖУБЮЧУЩИГХОЪДНЕСЕЬЭШПТВОДИ</p>
+        <p class="word-pr1">Ключ: ОШИБКА</p>
+        <p class="text-1 red">*Значения в поле ответа записывать ЗАГЛАВНЫМИ БУКВАМИ, без пробелов!</p>
+        <input class="input-otvet" type="text" id="z_1" placeholder="ОТВЕТ">
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close white">×</span>
+        <img id="th" class="center" src="notebook/theory5.png">
+    </div>
+
+    <button class="button-check" onclick='proverit()'>Проверить</button>
+    <button id="next-page" class="next-page" onclick="">Позвать Энму</button>
+    
+    <div class="bottom-stroke">
+        <p>Roman Prav</p>
+    </div>
+    <div class="top-stroke">
+        <p>Roman Prav</p>
+    </div>
+    <script>
+
+        var modal = document.getElementById('myModal');
+
+        function myClick() {
+            document.getElementById("th").style.display = "block";
+            modal.style.display = "block";
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        function proverit() {
+            pr_otv_1 = 'ПОКАУЧЕБАВКОЛЛЕДЖЕНЕПОЗВАЛА';
+            otv_uch_1 = document.getElementById('z_1').value;
+            ball = 0;
+            if (otv_uch_1 == pr_otv_1) {
+                ball += 1;
+            }
+            if (ball == 1) {
+                alert('Поздравляю! Ты прошел все испытания. Для продолжения нажми на кнопку "Позвать Энму".');
+                document.getElementById("next-page").style.display = "block";
+            }
+            else {
+                alert('Ошибка! Ответ неверный.');
+            }
+        }
+
+    </script>
+</body>
+</html>
