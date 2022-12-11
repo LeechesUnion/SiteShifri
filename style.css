@@ -79,7 +79,9 @@ button, a {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-
+.red {
+    color: orangered;
+}
 
 /*START*/
 .text-demo {
@@ -162,10 +164,10 @@ button, a {
     height: 50px;
     border: 0;
     right: 5%;
-    top: 80%;
+    top: 85%;
     text-decoration: none;
     border-radius: 25px;
-    font-size: 26px;
+    font-size: 24px;
     color: #402F30;
     background-color: #F99F63;
 }
@@ -175,10 +177,10 @@ button, a {
         height: 50px;
         border: 0;
         right: 5%;
-        top: 80%;
+        top: 85%;
         border-radius: 25px;
         border-color: #F99F63;
-        font-size: 26px;
+        font-size: 24px;
         color: #F99F63;
         background-color: white;
     }
@@ -188,19 +190,58 @@ button, a {
         height: 50px;
         border: 0;
         right: 5%;
-        top: 80%;
+        top: 85%;
         border-radius: 25px;
-        font-size: 26px;
+        font-size: 24px;
         color: #402F30;
         background-color: #F99F63;
     }
+#next-page {
+    display: none;
+}
+.next-page {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #F99F63;
+    right: 20%;
+    top: 85%;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 20px;
+    color: #F99F63;
+}
+    .next-page:hover, a.next-page.hover {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        border: 2px solid #402F30;
+        right: 20%;
+        top: 85%;
+        border-radius: 25px;
+        font-size: 20px;
+        color: #402F30;
+    }
+
+    .next-page:active, a.next-page.active {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        border: 2px solid #F99F63;
+        right: 20%;
+        top: 85%;
+        border-radius: 25px;
+        font-size: 20px;
+        color: #F99F63;
+    }
+
 /*PRACTICE 1*/
 
 .main-pr {
     position: absolute;
     width: 1470px;
     height: 750px;
-    background: #402F30;
+   /* background: #402F30;*/
     bottom: 9%;
     right: 3%;
 }
@@ -233,15 +274,48 @@ button, a {
     margin-right: 10px;
 }
 .title-pr1 {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .text-1 {
-    margin-left: 20px;
+    margin-left: 40px;
+    font-size: 18px;
 }
 .word-pr1 {
     font-size: 24px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
+.table-pr1 {
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 400px;
+    height: 400px;
+    border-spacing: 5px;
+}
+th {
+   /* padding: 5px 5px 5px 5px;*/
+    border: 6px solid #402F30;
+    border-radius: 5px;
+}
+td {
+    /* padding: 5px 5px 5px 5px;*/
+    border: 6px solid #F99F63;
+    border-radius: 5px;
+}
+.input-pr1 {
+    display: block;
+    width: 94%;
+    height: 94%;
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background: #EEEDEB;
+}
+    .input-pr1::placeholder {
+        color: #212529;
+        opacity: 0.4;
+    }
 
 .modal {
     display: none; /* Hidden by default */
