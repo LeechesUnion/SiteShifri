@@ -208,7 +208,7 @@ button, a {
     top: 85%;
     text-decoration: none;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 18px;
     color: #F99F63;
 }
     .next-page:hover, a.next-page.hover {
@@ -219,7 +219,7 @@ button, a {
         right: 20%;
         top: 85%;
         border-radius: 25px;
-        font-size: 20px;
+        font-size: 18px;
         color: #402F30;
     }
 
@@ -231,8 +231,52 @@ button, a {
         right: 20%;
         top: 85%;
         border-radius: 25px;
-        font-size: 20px;
+        font-size: 18px;
         color: #F99F63;
+    }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.input-otvet {
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    width: 800px;
+    height: 50px;
+    border: 5px solid #F99F63;
+    border-radius: 10px;
+    font-family: 'Comic Sans MS';
+    font-size: 26px;
+}
+#th {
+    display: none;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-size: 120px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
     }
 
 /*PRACTICE 1*/
@@ -292,12 +336,10 @@ button, a {
     border-spacing: 5px;
 }
 th {
-   /* padding: 5px 5px 5px 5px;*/
     border: 6px solid #402F30;
     border-radius: 5px;
 }
 td {
-    /* padding: 5px 5px 5px 5px;*/
     border: 6px solid #F99F63;
     border-radius: 5px;
 }
@@ -317,39 +359,166 @@ td {
         opacity: 0.4;
     }
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-#th1 {
-    display: none;
-}
-.close {
+
+
+/*PRACTICE 2*/
+
+.table-pr1 {
     position: absolute;
-    top: 20px;
-    right: 50px;
-    font-size: 120px;
-    font-weight: bold;
-    transition: 0.3s;
-    cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
+    top: 0;
+    right: 100px;
+    width: 400px;
+    height: 465px;
+    border-spacing: 5px;
 }
 
-    .close:hover,
-    .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
+th {
+    /* padding: 5px 5px 5px 5px;*/
+    border: 6px solid #402F30;
+    border-radius: 5px;
+}
+
+td {
+    /* padding: 5px 5px 5px 5px;*/
+    border: 6px solid #F99F63;
+    border-radius: 5px;
+}
+.input-pr2 {
+    display: block;
+    width: 90%;
+    height: 90%;
+    font-family: 'Comic Sans MS';
+    font-size: 26px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background: #EEEDEB;
+}
+
+    .input-pr2::placeholder {
+        color: #212529;
+        opacity: 0.4;
     }
 
+
+.reshetka {
+    position: absolute;
+    bottom: 250px;
+    left: 40px;
+    width: 150px;
+    height: 150px;
+}
+#reshetka-big {
+    display: none;
+    transform: rotate(0deg);
+}
+.reshetka-big {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 400px;
+    height: 400px;
+}
+#route-right {
+    display: none;
+}
+#route-left {
+    display: none;
+}
+.route-right {
+    position: absolute;
+    bottom: 250px;
+    left: 450px;
+    width: 150px;
+    height: 150px;
+}
+.route-left {
+    position: absolute;
+    bottom: 250px;
+    left: 250px;
+    width: 150px;
+    height: 150px;
+}
+#hide-button {
+    display: none;
+}
+.hide-button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    left: 650px;
+    bottom: 250px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    background-color: #402F30;
+}
+
+    .hide-button:hover, a.start-button:hover {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        border: 0;
+        left: 650px;
+        bottom: 250px;
+        border-radius: 25px;
+        border-color: #402F30;
+        font-size: 20px;
+        color: #402F30;
+        background-color: white;
+    }
+
+    .hide-button:active, a.start-button.active {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        border: 0;
+        left: 650px;
+        bottom: 250px;
+        border-radius: 25px;
+        font-size: 20px;
+        color: white;
+        background-color: #402F30;
+    }
+
+/*PRACTICE 3*/
+
+.marka {
+    margin-left: 40px;
+    width: 500px;
+    height: 300px;
+}
+
+/*PRACTICE 4*/
+
+.table-pr4 {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 320px;
+    height: 310px;
+    border-spacing: 5px;
+}
+.input-pr4 {
+    display: block;
+    width: 90%;
+    height: 90%;
+    font-family: 'Comic Sans MS';
+    font-size: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    background: #EEEDEB;
+}
+
+/*PRACTICE 4*/
+
+.vizh {
+    margin-left: 40px;
+    width: 500px;
+    height: 200px;
+}
 
 /*SUBTITLES*/
 
