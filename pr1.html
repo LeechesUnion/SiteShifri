@@ -56,10 +56,10 @@
     </div>
     <div id="myModal" class="modal">
         <span class="close white">×</span>
-        <img id="th1" class="center" src="notebook/theory1.png">
+        <img id="th" class="center" src="notebook/theory1.png">
     </div>
     <button class="button-check" onclick='proverit()'>Проверить</button>
-    <button id="next-page" class="next-page" onclick="document.location='pr2.html'">Следущее задание</button>
+    <button id="next-page" class="next-page" onclick="document.location='pr2.html'">Следующее задание</button>
     <div class="bottom-stroke">
         <p>Roman Prav</p>
     </div>
@@ -70,7 +70,7 @@
         var modal = document.getElementById('myModal');
 
         function myClick() {
-            document.getElementById("th1").style.display = "block";
+            document.getElementById("th").style.display = "block";
             modal.style.display = "block";
 
         }
@@ -222,6 +222,7 @@
             }
 
             if (ball == 25) {
+                alert('Проверка прошла успешно;) Для продолжения нажмите на кнопку "Следующее задание".');
                 document.getElementById("next-page").style.display = "block";
             }
             else {
