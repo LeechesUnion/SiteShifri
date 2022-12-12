@@ -279,9 +279,12 @@ button, a {
         cursor: url("images/finger.png"), url("images/finger.cur") 0 0, pointer;
     }
 
-/*PRACTICE 1 Dialogs*/
+/*PRACTICE Dialogs*/
 #main-dialog {
     display: block;
+}
+#main-dialog-end {
+    display: none;
 }
 .main-dialog {
     position: fixed;
@@ -294,6 +297,7 @@ button, a {
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
 }
+
 .dialog {
     position: absolute;
     left: 10%;
@@ -316,9 +320,19 @@ button, a {
 #dialog4 {
     display: none;
 }
-
+#dialog5 {
+    display: none;
+}
 #enma {
     display: block;
+    position: absolute;
+    width: 500px;
+    height: auto;
+    bottom: 295px;
+    right: 5%;
+}
+#enma1 {
+    display: none;
     position: absolute;
     width: 500px;
     height: auto;
@@ -454,7 +468,15 @@ td {
         opacity: 0.4;
     }
 
-
+.nazhmi {
+    position: absolute;
+    bottom: 65px;
+    left: 40px;
+    width: 150px;
+    height: 150px;
+    color: #F99F63;
+    font-size: 20px;
+}
 .reshetka {
     position: absolute;
     bottom: 250px;

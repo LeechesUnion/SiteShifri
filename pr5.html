@@ -24,8 +24,15 @@
     </div>
 
     <button class="button-check" onclick='proverit()'>Проверить</button>
-    <button id="next-page" class="next-page" onclick="document.location='comics3.html'">Позвать Энму</button>
-    
+    <button id="next-page" class="next-page" onclick="callEnma()">Позвать Энму</button>
+    <div id="main-dialog-end" class="main-dialog">
+        <img id="enma1" src="images/Энма.gif">
+        <a onclick="document.location='comics3.html'">
+            <div id="dialog5" class="dialog">
+                <p class="word-pr1 dark-brown">— Вот и всё! Вы молодцы, можете бежать к преподавателю. Ещё увидимся!</p>
+            </div>
+        </a>
+    </div>
     <div class="bottom-stroke">
         <p>Roman Prav</p>
     </div>
@@ -47,6 +54,12 @@
         // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
             modal.style.display = "none";
+        }
+
+        function callEnma() {
+            document.getElementById("dialog5").style.display = "block";
+            document.getElementById("enma1").style.display = "block";
+            document.getElementById("main-dialog-end").style.display = "block";
         }
 
         function proverit() {
