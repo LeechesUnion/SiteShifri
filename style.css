@@ -280,8 +280,10 @@ button, a {
     }
 
 /*PRACTICE 1 Dialogs*/
-.main-dialog {
+#main-dialog {
     display: block;
+}
+.main-dialog {
     position: fixed;
     z-index: 1;
     padding-top: 100px;
@@ -292,8 +294,7 @@ button, a {
     overflow: auto;
     background-color: rgba(0,0,0,0.4);
 }
-.dialog1 {
-    display: block;
+.dialog {
     position: absolute;
     left: 10%;
     bottom: 5%;
@@ -303,6 +304,19 @@ button, a {
     background: #F99F63;
     border: 5px solid #402F30;
 }
+#dialog1 {
+    display: block;
+}
+#dialog2 {
+    display: none;
+}
+#dialog3 {
+    display: none;
+}
+#dialog4 {
+    display: none;
+}
+
 #enma {
     display: block;
     position: absolute;
@@ -310,6 +324,14 @@ button, a {
     height: auto;
     bottom: 295px;
     right: 5%;
+}
+#eli {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: auto;
+    bottom: 295px;
+    left: 9%;
 }
 
 /*PRACTICE 1*/

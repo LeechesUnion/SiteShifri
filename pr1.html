@@ -60,11 +60,29 @@
     </div>
     <button class="button-check" onclick='proverit()'>Проверить</button>
     <button id="next-page" class="next-page" onclick="document.location='pr2.html'">Следующее задание</button>
-    <div class="main-dialog">
+    <div id="main-dialog" class="main-dialog">
         <img id="enma" src="images/Энма.gif">
-        <div class="dialog1">
-            <p class="word-pr1 dark-brown">— Привет, ребята. Меня зовут Энма, сегодня я буду вашим проводником. Как вы назвали свою команду?</p>
-        </div>
+        <img id="eli" src="images/Эля.gif">
+        <a onclick="nextDialog1()">
+            <div id="dialog1" class="dialog">
+                <p class="word-pr1 dark-brown">— Привет, ребята. Меня зовут Энма, сегодня я буду вашим проводником. Как вы назвали свою команду?</p>
+            </div>
+        </a>
+        <a onclick="nextDialog2()">
+            <div id="dialog2" class="dialog">
+                <p class="word-pr1 dark-brown">— Мы - «Дуэт пиявок».</p>
+            </div>
+        </a>
+        <a onclick="nextDialog3()">
+            <div id="dialog3" class="dialog">
+                <p class="word-pr1 dark-brown">— Прекрасно, ваше первое задание – «Маршрутное шифрование», знаете, как его решить?</p>
+            </div>
+        </a>
+        <a onclick="nextDialog4()">
+            <div id="dialog4" class="dialog">
+                <p class="word-pr1 dark-brown">— Да! У меня всё есть в справочнике.</p>
+            </div>
+        </a>
     </div>
 
     <div class="bottom-stroke">
@@ -88,6 +106,31 @@
         // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
             modal.style.display = "none";
+        }
+
+        function nextDialog1() {
+            document.getElementById("dialog1").style.display = "none";
+            document.getElementById("dialog2").style.display = "block";
+            document.getElementById("enma").style.display = "none";
+            document.getElementById("eli").style.display = "block";
+        }
+        function nextDialog2() {
+            document.getElementById("dialog2").style.display = "none";
+            document.getElementById("dialog3").style.display = "block";
+            document.getElementById("enma").style.display = "block";
+            document.getElementById("eli").style.display = "none";
+        }
+        function nextDialog3() {
+            document.getElementById("dialog3").style.display = "none";
+            document.getElementById("dialog4").style.display = "block";
+            document.getElementById("enma").style.display = "none";
+            document.getElementById("eli").style.display = "block";
+        }
+        function nextDialog4() {
+            document.getElementById("dialog4").style.display = "none";
+            document.getElementById("enma").style.display = "none";
+            document.getElementById("eli").style.display = "none";
+            document.getElementById("main-dialog").style.display = "none";
         }
 
         function proverit() {
