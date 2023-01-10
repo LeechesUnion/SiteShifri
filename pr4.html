@@ -54,7 +54,7 @@
             </tr>
         </table>
     </div>
-    
+
     <div id="myModal" class="modal">
         <span class="close white">×</span>
         <img id="th" class="center" src="notebook/theory4.png">
@@ -62,6 +62,35 @@
 
     <button class="button-check" onclick='proverit()'>Проверить</button>
     <button id="next-page" class="next-page" onclick="document.location='pr5.html'">Следующее задание</button>
+    <div id="main-dialog-hide" class="main-dialog">
+        <img id="enma" src="images/Энма.gif">
+        <img id="eli" src="images/Эля.gif">
+        <a onclick="helpDialog1()">
+            <div id="helpDialog1" class="dialog">
+                <p class="word-pr1 dark-brown">— Ребята, у вас возникли трудности? Я могу предложить свою помощь.</p>
+            </div>
+        </a>
+        <a onclick="helpDialog2()">
+            <div id="helpDialog2" class="dialog">
+                <p class="word-pr1 dark-brown">— Идите к следующему заданию, а это я вам засчитаю. Окей?</p>
+            </div>
+        </a>
+        <div id="helpDialog3" class="dialog">
+            <button class="btn-yes text-center" onclick="skip()">— Да, мы хотим пропустить задание.</button>
+            <button class="btn-no text-center" onclick="helpDialog3()">— Нет, мы ещё подумаем.</button>
+        </div>
+        <a onclick="helpDialog4()">
+            <div id="helpDialog4" class="dialog">
+                <p class="word-pr1 dark-brown">— Хорошо, но если всё-таки захотите пропустить задание, оставлю вам такую возможность.</p>
+            </div>
+        </a>
+        <a onclick="helpDialog5()">
+            <div id="helpDialog5" class="dialog">
+                <p class="word-pr1 dark-brown">— Нажмите на кнопку "Пропустить" и перейдём к следующему заданию.</p>
+            </div>
+        </a>
+    </div>
+    <button id="skip" class="button-skip" onclick='skip()'>Пропустить</button>
     <div class="bottom-stroke">
         <p>Roman Prav</p>
     </div>
@@ -69,6 +98,46 @@
         <p>Roman Prav</p>
     </div>
     <script>
+
+        setTimeout(function () {
+            document.getElementById("main-dialog-hide").style.display = "block";
+            document.getElementById("helpDialog1").style.display = "block";
+            document.getElementById("enma").style.display = "block";
+        }, 300000);
+
+        function helpDialog1() {
+            document.getElementById("helpDialog1").style.display = "none";
+            document.getElementById("helpDialog2").style.display = "block";
+        }
+        function helpDialog2() {
+            document.getElementById("helpDialog2").style.display = "none";
+            document.getElementById("helpDialog3").style.display = "block";
+            document.getElementById("enma").style.display = "none";
+            document.getElementById("eli").style.display = "block";
+        }
+        function helpDialog3() {
+            document.getElementById("helpDialog3").style.display = "none";
+            document.getElementById("helpDialog4").style.display = "block";
+            document.getElementById("enma").style.display = "block";
+            document.getElementById("eli").style.display = "none";
+        }
+        function helpDialog4() {
+            document.getElementById("helpDialog4").style.display = "none";
+            document.getElementById("helpDialog5").style.display = "block";
+        }
+        function helpDialog5() {
+            document.getElementById("main-dialog-hide").style.display = "none";
+            document.getElementById("helpDialog5").style.display = "none";
+            document.getElementById("enma").style.display = "none";
+            document.getElementById("skip").style.display = "block";
+        }
+        function skip() {
+            if (confirm("Вы уверены, что хотите пропустить задание?")) {
+                document.location = 'pr5.html';
+            } else {
+
+            }
+        }
 
         var modal = document.getElementById('myModal');
 
@@ -95,6 +164,7 @@
             if (ball == 1) {
                 alert('Проверка прошла успешно;) Для продолжения нажмите на кнопку "Следующее задание".');
                 document.getElementById("next-page").style.display = "block";
+                document.getElementById("skip").style.display = "none";
             }
             else {
                 alert('Ошибка! Ответ неверный.');
