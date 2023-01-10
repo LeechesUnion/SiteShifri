@@ -196,6 +196,49 @@ button, a {
         color: #402F30;
         background-color: #F99F63;
     }
+.button-skip {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border: 0;
+    right: 20%;
+    top: 85%;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 24px;
+    color: white;
+    background-color: orangered;
+}
+
+    .button-skip:hover, a.start-button:hover {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        border: 0;
+        right: 20%;
+        top: 85%;
+        border-radius: 25px;
+        border-color: #F99F63;
+        font-size: 24px;
+        color: orangered;
+        background-color: white;
+    }
+
+    .button-skip:active, a.start-button.active {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        border: 0;
+        right: 20%;
+        top: 85%;
+        border-radius: 25px;
+        font-size: 24px;
+        color: white;
+        background-color: orangered;
+    }
+#skip {
+    display: none;
+}
 #next-page {
     display: none;
 }
@@ -283,6 +326,9 @@ button, a {
 #main-dialog {
     display: block;
 }
+#main-dialog-hide {
+    display: none;
+}
 #main-dialog-end {
     display: none;
 }
@@ -295,7 +341,7 @@ button, a {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.9);
 }
 
 .dialog {
@@ -323,6 +369,21 @@ button, a {
 #dialog5 {
     display: none;
 }
+#helpDialog1 {
+    display: none;
+}
+#helpDialog2 {
+    display: none;
+}
+#helpDialog3 {
+    display: none;
+}
+#helpDialog4 {
+    display: none;
+}
+#helpDialog5 {
+    display: none;
+}
 #enma {
     display: block;
     position: absolute;
@@ -346,6 +407,34 @@ button, a {
     height: auto;
     bottom: 295px;
     left: 9%;
+}
+.btn-yes {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    left: 5%;
+    top: 10%;
+    border: 0;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 24px;
+    color: white;
+    background-color: #402F30;
+    padding: 8px 10px 10px 10px;
+}
+.btn-no {
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    right: 5%;
+    top: 10%;
+    border: 0;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 24px;
+    color: white;
+    background-color: #402F30;
+    padding: 8px 10px 10px 10px;
 }
 
 /*PRACTICE 1*/
@@ -588,7 +677,7 @@ td {
     background: #EEEDEB;
 }
 
-/*PRACTICE 4*/
+/*PRACTICE 5*/
 
 .vizh {
     margin-left: 40px;
